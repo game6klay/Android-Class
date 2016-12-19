@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:background="#323232">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText"
+        android:text="Welcome to ETA Network"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createTripText"
+        android:textColor="#ffffff"
+        android:text="Planning a trip?"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTripText"
+        android:textColor="#ffffff"
+        android:text="View Created Trips ?"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/stop_trip"
+        android:layout_toEndOf="@+id/stop_trip"
+        android:layout_above="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Trip"
+        android:id="@+id/createTripButton"
+        android:onClick="startCreateTripActivity"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:layout_above="@+id/viewTripText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Trip"
+        android:id="@+id/button2"
+        android:onClick="startViewTripListActivity"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arrived!"
+        android:id="@+id/mark_arrived"
+        android:visibility="invisible"
+        android:background="#ffccbf"
+        android:layout_above="@+id/createTripText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ongoing_trip"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Trip"
+        android:id="@+id/stop_trip"
+        android:visibility="invisible"
+        android:background="#ff0000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/createTripText" />
+
+</RelativeLayout>

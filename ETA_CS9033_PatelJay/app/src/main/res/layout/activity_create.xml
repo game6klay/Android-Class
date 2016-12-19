@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nyu.cs9033.eta.controllers.CreateTripActivity"
+    android:background="#323232">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:hint="Enter a place"
+        android:layout_marginTop="27dp"
+        android:background="#ffffffff"
+        android:layout_below="@+id/trip_name"
+        android:layout_alignLeft="@+id/trip_name"
+        android:layout_alignStart="@+id/trip_name" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meeting_spot"
+        android:hint="Enter a meetup spot"
+        android:background="#ffffffff"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trip_name"
+        android:hint="Name your trip"
+        android:background="#ffffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:hint="Enter a date"
+        android:background="#ffffffff"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/search_locn"
+        android:layout_alignStart="@+id/search_locn"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/time"
+        android:hint="Enter a time"
+        android:background="#fffefff9"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/participants"
+        android:background="#ffffffff"
+        android:hint="Select Friends"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/add_participant"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/meeting_spot"
+        android:layout_alignStart="@+id/meeting_spot" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Trip (Click Get ID first)"
+        android:id="@+id/trip_submit"
+        android:background="#ffff00"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:layout_above="@+id/trip_cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Trip"
+        android:id="@+id/trip_cancel"
+        android:textStyle="bold"
+        android:background="#ff0000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/trip_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="299dp"
+        android:layout_marginStart="299dp"
+        android:id="@+id/relativeLayout2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get ID"
+            android:id="@+id/get_id"
+            android:textStyle="bold"
+            android:background="#ffff00"
+            android:layout_marginBottom="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create a Trip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Trip Name"
+        android:textColor="#ffffff"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/trip_name"
+        android:layout_alignBottom="@+id/trip_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Destination"
+        android:textColor="#ffffff"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date &amp; Time"
+        android:textColor="#ffffff"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/search_locn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toStartOf="@+id/date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Meeting At"
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Friends"
+        android:textColor="#ffffff"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/participants"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Friends"
+        android:textStyle="bold"
+        android:id="@+id/add_participant"
+        android:background="#ffff00"
+        android:layout_above="@+id/trip_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interest"
+        android:background="#ffffff"
+        android:hint="Enter your interests"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Location"
+        android:id="@+id/search_locn"
+        android:textStyle="bold"
+        android:background="#ffff00"
+        android:layout_below="@+id/interest"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_marginTop="27dp"
+        android:layout_alignLeft="@+id/interest"
+        android:layout_alignStart="@+id/interest" />
+
+</RelativeLayout>
+    </ScrollView>
