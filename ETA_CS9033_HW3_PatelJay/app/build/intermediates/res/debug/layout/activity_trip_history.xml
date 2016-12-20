@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323232"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="All your trips till now !!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/allTrips" />
+
+    <ListView
+        android:id="@+id/list_of_trips"
+        android:layout_width="wrap_content"
+        android:layout_height="392dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:layout_weight="0.82" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Main Menu"
+        android:id="@+id/mainMenu"
+        android:background="#ffff00"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+<!-- From: file:/Users/jay/Desktop/ETA_CS9033_HW3_PatelJay/app/src/main/res/layout/activity_trip_history.xml -->
