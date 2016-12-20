@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#323232"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText"
+        android:text="Welcome to ETA Network"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createTripText"
+        android:textColor="#ffffff"
+        android:text="Planning a trip?"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Trip!"
+        android:id="@+id/createTripButton"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:width="300px"
+        android:height="120px"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/createTripText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTripText"
+        android:textColor="#ffffff"
+        android:text="View Created Trips ?"
+        android:textSize="25sp"
+        android:layout_below="@+id/createTripButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Trips"
+        android:id="@+id/viewButton"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:width="300px"
+        android:height="120px"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/viewTripText"
+        android:layout_alignLeft="@+id/createTripButton" />
+
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeText"
+        android:text="Welcome to ETA Network"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffa500"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createTripText"
+        android:textColor="#ffffff"
+        android:text="Planning a trip?"
+        android:textSize="25sp"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a Trip!"
+        android:id="@+id/createTripButton"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:width="300px"
+        android:height="120px"
+        android:layout_below="@+id/createTripText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewTripText"
+        android:textColor="#ffffff"
+        android:text="View Created Trips ?"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/createTripText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Trips"
+        android:id="@+id/viewButton"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FFFF00"
+        android:width="300px"
+        android:height="120px"
+        android:layout_below="@+id/viewTripText"
+        android:layout_alignLeft="@+id/createTripButton" />-->
+
+
+</RelativeLayout>
+<!-- From: file:/Users/jay/Desktop/ETA_CS9033/app/src/main/res/layout/activity_main.xml -->

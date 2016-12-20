@@ -1,0 +1,241 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#323232"
+        tools:context=".CreateTripActivity">
+
+
+        <TextView
+            android:id="@+id/enterDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Enter the Trip Details"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/tripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/enterDetailsText"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Give it a cool name"
+            android:textColorHint="#ffff00"
+            android:inputType="textPersonName"
+            android:textColor="#ffff00" />
+
+        <EditText
+            android:id="@+id/meetupLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tripName"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Set up a meeting Location"
+            android:inputType="textPersonName"
+            android:textColorHint="#ffff00"
+            android:textColor="#ffff00" />
+
+        <EditText
+            android:id="@+id/tripDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/meetupLocation"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Trip Destination"
+            android:inputType="textPersonName"
+            android:textColorHint="#ffff00"
+            android:textColor="#ffff00" />
+
+        <EditText
+            android:id="@+id/meetupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tripDestination"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="What time?"
+            android:textColorHint="#ffff00"
+            android:inputType="time"
+            android:textColor="#ffff00" />
+
+        <EditText
+            android:id="@+id/meetupDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/meetupTime"
+            android:layout_marginTop="15dp"
+            android:hint="Which date?"
+            android:textColorHint="#ffff00"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="#ffff00" />
+
+        <TextView
+            android:id="@+id/attendees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meetupDate"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text=" Who&apos;s Rolling ?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/larryPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/attendees"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Larry Page"
+            android:textColor="#ffff00" />
+
+        <CheckBox
+            android:id="@+id/sundarPichai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/larryPage"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Sundar Pichai"
+            android:textColor="#ffff00" />
+
+        <CheckBox
+            android:id="@+id/markZuckerberg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sundarPichai"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Mark Zuckerberg"
+            android:textColor="#ffff00" />
+
+        <CheckBox
+            android:id="@+id/jeffBezoz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/markZuckerberg"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Jeff Bezoz"
+            android:textColor="#ffff00" />
+
+        <CheckBox
+            android:id="@+id/timCook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/jeffBezoz"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Tim Cook"
+            android:textColor="#ffff00" />
+
+        <CheckBox
+            android:id="@+id/elonMusk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/timCook"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Elon Musk"
+            android:textColor="#ffff00" />
+
+        <Button
+            android:id="@+id/saveTripForCreateActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="#ffff00"
+            android:text="Save Trip"
+            android:layout_below="@+id/elonMusk"
+            android:layout_alignLeft="@+id/cancelTripForCreateActivity"
+            android:layout_alignStart="@+id/cancelTripForCreateActivity" />
+
+        <Button
+            android:id="@+id/cancelTripForCreateActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="Cancel Trip"
+            android:layout_below="@+id/saveTripForCreateActivity"
+            android:layout_toRightOf="@+id/jeffBezoz"
+            android:layout_toEndOf="@+id/jeffBezoz"
+            android:layout_marginTop="17dp" />
+
+        <!--<CheckBox
+            android:id="@+id/elonMusk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/elonMusk"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:text="Elon Musk"
+            android:textColor="#ffff00" />-->
+
+        <!--<Button
+            android:id="@+id/saveTripForCreateActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/elonMusk"
+            android:layout_alignEnd="@+id/welcomeText"
+            android:layout_alignRight="@+id/welcomeText"
+            android:layout_below="@+id/elonMusk"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffff00"
+            android:text="Save Trip" />
+
+        <Button
+            android:id="@+id/cancelTripForCreateActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/markZuckerberg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/saveTripForCreateActivity"
+            android:layout_gravity="center_horizontal"
+            android:background="#ff0000"
+            android:text="Cancel Trip" />-->
+
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/Users/jay/Desktop/ETA_CS9033/app/src/main/res/layout/activity_create_trip.xml -->
